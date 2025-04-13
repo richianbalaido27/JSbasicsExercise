@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Exercise 1</title>
+  <style>
+    h2 {
+      font-weight: bold;
+    }
+
+    label {
+      display: inline-block;
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 200px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin-right: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .results {
+      margin-top: 20px;
+    }
+
+    .results p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>JS Exercise 1</h2>
+
+  <label>Enter First Number:</label>
+  <input type="number" id="num1"><br>
+
+  <label>Enter Second Number:</label>
+  <input type="number" id="num2"><br><br>
+
+  <button onclick="calculate()">Calculate</button>
+  <button onclick="clearFields()">Clear</button>
+
+  <div class="results">
+    <p>Sum: <span id="sum"></span></p>
+    <p>Difference: <span id="diff"></span></p>
+    <p>Product: <span id="prod"></span></p>
+    <p>Quotient: <span id="quot"></span></p>
+  </div>
+
+  <!-- Link the external JS file here -->
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Exercise 2</title>
+  <style>
+    h2 {
+      font-weight: bold;
+    }
+
+    label {
+      display: inline-block;
+      width: 150px;
+      margin-bottom: 10px;
+    }
+
+    input {
+      width: 200px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin-right: 5px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .results {
+      margin-top: 20px;
+    }
+
+    .results p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>JS Exercise 2</h2>
+
+  <label>First Name:</label>
+  <input type="text" id="fname"><br>
+
+  <label>Middle Name:</label>
+  <input type="text" id="mname"><br>
+
+  <label>Last Name:</label>
+  <input type="text" id="lname"><br><br>
+
+  <button onclick="generateFullName()">Generate</button>
+  <button onclick="clearFields()">Clear</button>
+
+  <div class="results">
+    <p>Full Name: <span id="fullname"></span></p>
+  </div>
+
+  <!-- Link external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>

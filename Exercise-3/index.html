@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Exercise 3</title>
+  <style>
+    
+
+    h2 {
+      font-weight: bold;
+    }
+
+    label {
+      font-size: 16px;
+      display: inline-block;
+      width: 130px;
+    }
+
+    input {
+      width: 200px;
+      padding: 5px;
+      font-size: 16px;
+    }
+
+    button {
+      padding: 5px 10px;
+      margin: 5px 5px 5px 0;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    .results p {
+      margin: 5px 0;
+      font-size: 16px;
+    }
+
+    .results span {
+      font-weight: bold;
+    }
+
+    #sum { color: blue; }
+    #highest { color: green; }
+    #lowest { color: red; }
+  </style>
+</head>
+<body>
+
+  <h2>JS Exercise 3</h2>
+
+  <label>Enter a Number:</label>
+  <input type="number" id="numberInput"><br><br>
+
+  <button onclick="insertNumber()">Insert</button>
+  <button onclick="clearAll()">Delete All</button>
+
+  <div class="results">
+    <p>Numbers:</p>
+    <div id="numberList"></div><br>
+    <p>Sum: <span id="sum">0</span></p>
+    <p>Highest: <span id="highest">-</span></p>
+    <p>Lowest: <span id="lowest">-</span></p>
+  </div>
+
+  <!-- Link the external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
